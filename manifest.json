@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Utubescale",
+  "version": "0.1",
+  "author": "Lavneet Puri",
+  "description": "This extension lets you tweak the youtube layout size to you liking",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/"
+      ],
+      "js": [
+        "scripts/reset-layout.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {}
+}
