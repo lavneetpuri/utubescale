@@ -4,6 +4,10 @@
   "version": "0.1",
   "author": "Lavneet Puri",
   "description": "This extension lets you tweak the youtube layout size to you liking",
+  "browser_action": {
+    "default_title": "Utubescale",
+    "default_popup": "dist/frontend/popup/index.html"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -17,6 +21,5 @@
   ],
   "permissions": [
     "activeTab"
-  ],
-  "browser_action": {}
+  ]
 }
